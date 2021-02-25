@@ -65,6 +65,15 @@ netTotal = "${:,.2f}".format(netTot)
 greatestProfit = "${:,.2f}".format(greatestProfit)
 greatestLoss = "${:,.2f}".format(greatestLoss)
 
+#Final Analysis--> print to terminal
+print("Financial Analysis")
+print("--------------------------------")
+print(f"Total Months: {totalMonths} ")
+print(f"Net Total: {netTotal}")
+print(f"Average Change: $ {round(avgChange,2)}")
+print(f"Greatest Increase in Profits: {dateProfit} , {greatestProfit}")
+print(f"Greatest Decrease in Losses: {dateLoss} , {greatestLoss}")
+
 #print analysis to Bank-Analysis.txt
 f = open("Bank-Analysis.txt","w")
 f.write("Financial Analysis" + "\n")
